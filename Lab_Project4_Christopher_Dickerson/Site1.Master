@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Lab_Project4_Christopher_Dickerson.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Lab 4</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+      <link rel="stylesheet" href="StyleSheet1.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>Lab 4 - Christopher Dickerson</header>
+        <div>
+            <asp:Label runat="server" ID="Date" />
+        </div>
+        <div>
+            <ul>
+                <li><a href="WebForm1.aspx">Page One</a></li>
+                <li><a href="WebForm2.aspx">Page Two</a></li>
+                <li><a href="WebForm3.aspx">Page Three</a></li>
+            </ul>
+        </div>
+        <div class="container">
+                <div class="col">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col">
+                    <p>
+                        This Div is the same for every page!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>Lab 4 - Christopher Dickerson // Sinclair Community College 2021</footer>
+    </form>
+</body>
+</html>
