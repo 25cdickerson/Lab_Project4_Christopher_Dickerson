@@ -7,12 +7,12 @@
     <title>Lab 4</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-      <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="stylesheet" href="StyleSheet1.css">
 </head>
 <body>
     <form id="form1" runat="server">
         <header>Lab 4 - Christopher Dickerson</header>
-        <div>
+        <div id="date">
             <asp:Label runat="server" ID="Date" />
         </div>
         <div>
@@ -23,11 +23,12 @@
             </ul>
         </div>
         <div class="container">
-                <div class="col">
+            <div class="row">
+                <div class="col" id="left">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>
-                <div class="col">
+                <div class="col" id="right">
                     <p>
                         This Div is the same for every page!
                     </p>
